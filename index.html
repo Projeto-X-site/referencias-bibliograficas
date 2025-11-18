@@ -1,69 +1,114 @@
 <!DOCTYPE html><html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Referências Bibliográficas</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f5f5f5;
-            margin: 0;
-            padding: 20px;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        h1 {
-            text-align: center;
-        }
-        ul {
-            line-height: 1.6;
-        }
-        a {
-            color: #0055aa;
-            word-break: break-all;
-        }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Referências Bibliográficas – Projeto X</title><style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: #000;
+        color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        animation: fadeIn 1.2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    header {
+        text-align: center;
+        padding: 40px 0;
+        border-bottom: 2px solid #fff;
+        animation: slideDown 1s ease forwards;
+    }
+
+    @keyframes slideDown {
+        from { transform: translateY(-30px); opacity: 0; }
+        to { transform: translateY(0); opacity: 1; }
+    }
+
+    h1 {
+        font-size: 32px;
+        letter-spacing: 2px;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 20px;
+        line-height: 1.7;
+        animation: fadeUp 1.2s ease;
+    }
+
+    @keyframes fadeUp {
+        from { transform: translateY(20px); opacity: 0; }
+        to { transform: translateY(0); opacity: 1; }
+    }
+
+    .ref {
+        margin-bottom: 20px;
+        padding: 15px;
+        background: #0a0a0a;
+        border-left: 4px solid white;
+        box-shadow: 0 0 10px rgba(255,255,255,0.1);
+        animation: pop 0.6s ease;
+    }
+
+    @keyframes pop {
+        from { transform: scale(0.95); opacity: 0; }
+        to { transform: scale(1); opacity: 1; }
+    }
+
+    a {
+        color: #fff;
+        text-decoration: none;
+        word-break: break-all;
+        font-weight: bold;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+</style>
+
 </head>
-<body>
-    <div class="container">
-        <h1>Referências Bibliográficas</h1>
-        <ul>
-            <li>
-                Guia do Estudante Abril - Como a corrida espacial influenciou a Guerra Fria. 
-                Disponível em: <a href="https://guiadoestudante.abril.com.br/estudo/filmes-e-livro-mostram-como-a-corrida-espacial-influenciou-a-guerra-fria/#google_vignette">Link</a>. 
-                Acesso em 28/10/2025.
-            </li>
-            <li>
-                CNN Brasil - 50 anos da Missão Apolo. 
-                Disponível em: <a href="https://www.cnnbrasil.com.br/tecnologia/50-anos-da-missao-apollo-13-reflexoes-sobre-um-fracasso-bem-sucedido/">Link</a>. 
-                Acesso em 28/10/2025.
-            </li>
-            <li>
-                NASA.gov - Apollo 11. 
-                Disponível em: <a href="https://www.nasa.gov/mission/apollo-11/">Link</a>. 
-                Acesso em 30/10/2025.
-            </li>
-            <li>
-                National Geographic Brasil - De volta à Lua após mais de 50 anos. 
-                Disponível em: <a href="https://www.nationalgeographicbrasil.com/espaco/2025/09/de-volta-a-lua-apos-mais-de-50-anos-astronautas-da-nasa-irao-ao-satelite-da-terra-em-2026">Link</a>. 
-                Acesso em 30/10/2025.
-            </li>
-            <li>
-                Oklahoma Historical Society - Space History. 
-                Disponível em: <a href="https://www.okhistory.org/learn/space1">Link</a>. 
-                Acesso em 30/10/2025.
-            </li>
-            <li>
-                Eurasia Travel - Baikonur History. 
-                Disponível em: <a href="https://eurasia.travel.pt/kazakhstan/baikonur/history/">Link</a>.
-            </li>
-        </ul>
-    </div>
-</body>
+<body><header>
+    <h1>Referências Bibliográficas</h1>
+</header><div class="container">
+    <div class="ref">
+        Guia do estudante Abril – Como a corrida espacial influenciou a Guerra Fria<br>
+        Disponível em: <a href="https://guiadoestudante.abril.com.br/estudo/filmes-e-livro-mostram-como-a-corrida-espacial-influenciou-a-guerra-fria/#google_vignette">https://guiadoestudante.abril.com.br/estudo/filmes-e-livro-mostram-como-a-corrida-espacial-influenciou-a-guerra-fria/#google_vignette</a><br>
+        Acesso em 28/10/2025
+    </div><div class="ref">
+    CNN Brasil – 50 anos da Missão Apolo<br>
+    Disponível em: <a href="https://www.cnnbrasil.com.br/tecnologia/50-anos-da-missao-apollo-13-reflexoes-sobre-um-fracasso-bem-sucedido/">https://www.cnnbrasil.com.br/tecnologia/50-anos-da-missao-apollo-13-reflexoes-sobre-um-fracasso-bem-sucedido/</a><br>
+    Acesso em 28/10/2025
+</div>
+
+<div class="ref">
+    Nasa.gov – Apollo 11<br>
+    Disponível em: <a href="https://www.nasa.gov/mission/apollo-11/">https://www.nasa.gov/mission/apollo-11/</a><br>
+    Acesso em 30/10/2025
+</div>
+
+<div class="ref">
+    National Geographic Brasil – De volta à Lua após mais de 50 anos<br>
+    Disponível em: <a href="https://www.nationalgeographicbrasil.com/espaco/2025/09/de-volta-a-lua-apos-mais-de-50-anos-astronautas-da-nasa-irao-ao-satelite-da-terra-em-2026">https://www.nationalgeographicbrasil.com/espaco/2025/09/de-volta-a-lua-apos-mais-de-50-anos-astronautas-da-nasa-irao-ao-satelite-da-terra-em-2026</a><br>
+    Acesso em 30/10/2025
+</div>
+
+<div class="ref">
+    Oklahoma History – Space History<br>
+    Disponível em: <a href="https://www.okhistory.org/learn/space1">https://www.okhistory.org/learn/space1</a><br>
+    Acesso em 30/10/2025
+</div>
+
+<div class="ref">
+    Eurasia Travel – Baikonur History<br>
+    Disponível em: <a href="https://eurasia.travel.pt/kazakhstan/baikonur/history/">https://eurasia.travel.pt/kazakhstan/baikonur/history/</a>
+</div>
+
+</div></body>
 </html>
